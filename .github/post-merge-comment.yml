@@ -1,0 +1,11 @@
+name: Post Merge Comment
+
+# only trigger on pull request closed events
+on:
+  pull_request:
+    types: [ closed ]
+
+jobs:
+  comment-pr:
+    uses: MaidenVoyageSoftware/workflows/.github/workflows/post-merge-comment.yml@master
+    secrets: inherit

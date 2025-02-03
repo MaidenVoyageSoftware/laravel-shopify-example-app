@@ -1,0 +1,61 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "not_operator_with_successor_space": false,
+        "concat_space": {"spacing": "one"},
+        "single_space_around_construct": {
+            "constructs_followed_by_a_single_space": [
+                "abstract",
+                "as",
+                "attribute",
+                "case",
+                "catch",
+                "class",
+                "clone",
+                "comment",
+                "const",
+                "const_import",
+                "continue",
+                "do",
+                "echo",
+                "else",
+                "enum",
+                "extends",
+                "final",
+                "finally",
+                "function_import",
+                "global",
+                "goto",
+                "implements",
+                "include",
+                "include_once",
+                "instanceof",
+                "insteadof",
+                "interface",
+                "match",
+                "named_argument",
+                "namespace",
+                "new",
+                "open_tag_with_echo",
+                "php_doc",
+                "php_open",
+                "print",
+                "private",
+                "protected",
+                "public",
+                "readonly",
+                "require",
+                "require_once",
+                "return",
+                "static",
+                "throw"
+            ],
+            "constructs_preceded_by_a_single_space": [
+                "as"
+            ]
+        },
+        "function_declaration": {
+            "closure_fn_spacing": "none"
+        }
+    }
+}
