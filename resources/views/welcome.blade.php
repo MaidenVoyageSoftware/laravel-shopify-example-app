@@ -1,3 +1,17 @@
-<h1>This is a Laravel Blade template</h1>
+@extends('shopify-app::layouts.default')
 
-<p>To see a Vue.js page, go to <a href="/helloworld">/helloworld</a></p>
+@section('content')
+    <p>Hello World!</p>
+    {{ json_encode(Auth::user()->api()->rest('GET', '/admin/api/customers.json')) }}
+    <ui-title-bar title="Testing">
+        <ui-button @click="console.log('Button clicked!')">Click me</ui-button>
+    </ui-title-bar>
+    <ui-modal id="my-modal">
+        <p>Message</p>
+        <ui-title-bar title="Title">
+            <button variant="primary">Label</button>
+            <button onclick="document.getElementById('my-modal').hide()">Label</button>
+        </ui-title-bar>
+    </ui-modal>
+    <button onclick="document.getElementById('my-modal').show()">Open Modal</button>
+@endsection
